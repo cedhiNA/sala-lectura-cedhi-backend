@@ -105,7 +105,7 @@ const Libro = sequelize.define('libro', {
             if (typeof libro.url_cover === 'string') libro.url_cover = libro.url_cover.trim();
         },
         beforeCreate: (libro, options) => {
-            // Mismo trim antes de crear un nuevo libro
+            // trim antes de crear un nuevo libro
             if (typeof libro.titulo === 'string') libro.titulo = libro.titulo.trim();
             if (typeof libro.autor === 'string') libro.autor = libro.autor.trim();
             if (typeof libro.codigo_dewey === 'string') libro.codigo_dewey = libro.codigo_dewey.trim();
