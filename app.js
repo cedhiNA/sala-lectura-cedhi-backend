@@ -76,7 +76,4 @@ sequelize
  * Eliminar libro
  * Editar libro
  * Agregar libro
- *
- *
- *
  */
